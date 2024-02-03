@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card shadow">
+            <div class="card-header">
+                {{ manageMenuOption.title }}
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let item of manageMenuOption.menuOptions" (click)="onClickLi(item)">
+                    {{ item.name }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
